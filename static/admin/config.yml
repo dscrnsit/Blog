@@ -1,0 +1,84 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/uploads" # Folder where user uploaded files should go
+public_folder: "/uploads"
+
+publish_mode: editorial_workflow
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Posts" # Used in the UI, ie.: "New Post"
+    label_singular: Post
+    folder: "content/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: 'Summary', name: 'summary', widget: 'markdown', required: false}
+      - {label: 'Body', name: 'body', widget: 'markdown'}
+      - {label: "Intro Blurb", name: "description", widget: "text", required: false}
+      - {label: 'Show ToC', name: 'ShowToc', widget: boolean, default: true, required: false}
+      - {label: 'Open ToC', name: 'TocOpen', widget: boolean, default: true, required: false}
+      - {label: 'Hide meta', name: 'hideMeta', widget: boolean, required: false}
+      - {label: 'Disable share', name: 'disableShare', widget: boolean, required: false}
+      - {label: 'Disable reading time', name: 'disableReadingTime', widget: boolean, required: false}
+      - label: 'Tags'
+        name: 'tags'
+        required: false
+        widget: 'list'
+      - label: 'Categories'
+        name: 'categories'
+        required: false
+        widget: 'list'
+      - label: 'Cover'
+        name: 'cover'
+        required: false
+        widget: object
+        fields:
+          - label: 'Image'
+            name: 'image'
+            widget: 'image'
+            allow_multiple: false
+            required: false
+          - {label: Caption, name: caption, widget: string, required: false}
+          - {label: Description for screen readers, name: alt, widget: string, required: false}
+          - {label: Relative, name: relative, widget: hidden, default: true}
+      
+  - name: "pages"
+    label: Pages
+    label_singular: Page
+    folder: 'content'
+    create: true
+    fields:
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Publish Date', name: 'date', widget: 'datetime'}
+      - {label: 'Summary', name: 'summary', widget: 'markdown', required: false}
+      - {label: 'Body', name: 'body', widget: 'markdown'}
+      - {label: 'Show ToC', name: 'ShowToc', widget: boolean, required: false}
+      - {label: 'Open ToC', name: 'TocOpen', widget: boolean, required: false}
+      - {label: 'Hide meta', name: 'hideMeta', widget: boolean, default: true, required: false}
+      - {label: 'Disable share', name: 'disableShare', widget: boolean, required: false}
+      - {label: 'Disable reading time', name: 'disableReadingTime', widget: boolean, required: false}
+      - label: 'Tags'
+        name: 'tags'
+        required: false
+        widget: 'list'
+      - label: 'Categories'
+        name: 'categories'
+        required: false
+        widget: 'list'
+      - label: 'Cover'
+        name: 'cover'
+        required: false
+        widget: object
+        fields:
+          - label: 'Image'
+            name: 'image'
+            widget: 'image'
+            allow_multiple: false
+            required: false
+          - {label: Caption, name: caption, widget: string, required: false}
+          - {label: Description for screen readers, name: alt, widget: string, required: false}
+          - {label: Relative, name: relative, widget: hidden, default: true}
