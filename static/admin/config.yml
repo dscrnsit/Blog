@@ -16,13 +16,17 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: 'Summary', name: 'summary', widget: 'markdown', required: false}
+      - {label: "Intro Description", name: "description", widget: "text", required: false}
       - {label: 'Body', name: 'body', widget: 'markdown'}
-      - {label: "Intro Blurb", name: "description", widget: "text", required: false}
       - {label: 'Show ToC', name: 'ShowToc', widget: boolean, default: true, required: false}
-      - {label: 'Open ToC', name: 'TocOpen', widget: boolean, default: true, required: false}
+      - {label: 'Open ToC', name: 'TocOpen', widget: boolean, default: false, required: false}
       - {label: 'Hide meta', name: 'hideMeta', widget: boolean, required: false}
       - {label: 'Disable share', name: 'disableShare', widget: boolean, required: false}
       - {label: 'Disable reading time', name: 'disableReadingTime', widget: boolean, required: false}
+      - label: 'Authors'
+        name: 'author'
+        required: true
+        widget: 'list'
       - label: 'Tags'
         name: 'tags'
         required: false
@@ -39,45 +43,9 @@ collections: # A list of collections the CMS should be able to edit
           - label: 'Image'
             name: 'image'
             widget: 'image'
-            allow_multiple: false
             required: false
           - {label: Caption, name: caption, widget: string, required: false}
           - {label: Description for screen readers, name: alt, widget: string, required: false}
           - {label: Relative, name: relative, widget: hidden, default: true}
-      
-  - name: "pages"
-    label: Pages
-    label_singular: Page
-    folder: 'content'
-    create: true
-    fields:
-      - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Publish Date', name: 'date', widget: 'datetime'}
-      - {label: 'Summary', name: 'summary', widget: 'markdown', required: false}
-      - {label: 'Body', name: 'body', widget: 'markdown'}
-      - {label: 'Show ToC', name: 'ShowToc', widget: boolean, required: false}
-      - {label: 'Open ToC', name: 'TocOpen', widget: boolean, required: false}
-      - {label: 'Hide meta', name: 'hideMeta', widget: boolean, default: true, required: false}
-      - {label: 'Disable share', name: 'disableShare', widget: boolean, required: false}
-      - {label: 'Disable reading time', name: 'disableReadingTime', widget: boolean, required: false}
-      - label: 'Tags'
-        name: 'tags'
-        required: false
-        widget: 'list'
-      - label: 'Categories'
-        name: 'categories'
-        required: false
-        widget: 'list'
-      - label: 'Cover'
-        name: 'cover'
-        required: false
-        widget: object
-        fields:
-          - label: 'Image'
-            name: 'image'
-            widget: 'image'
-            allow_multiple: false
-            required: false
-          - {label: Caption, name: caption, widget: string, required: false}
-          - {label: Description for screen readers, name: alt, widget: string, required: false}
-          - {label: Relative, name: relative, widget: hidden, default: true}
+          - {label: Hidden, name: hidden, widget: boolean, default: true, required: false}
+

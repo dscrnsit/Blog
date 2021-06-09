@@ -19,8 +19,8 @@ params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: "DSC RNSIT Blog"
     description: "Developer Student Clubs is a Google Developers program for university students to learn mobile and web development skills, design thinking skills and leadership skills."
-    keywords: [Blog, Portfolio, PaperMod]
-    author: ["DSC RNSIT", "You"]
+    keywords: ["DSC RNSIT", Blog, Portfolio, PaperMod]
+    author: ["DSC RNSIT"]
     # author: ["Me", "You"] # multiple authors
     images: ["logo.png"]
     DateFormat: "January 2, 2006"
@@ -43,10 +43,10 @@ params:
     assets:
         disableHLJS: false # to disable highlight.js
         # disableFingerprinting: true
-        favicon: "/icon.png"
-        favicon16x16: "/icon.png"
-        favicon32x32: "/icon.png"
-        apple_touch_icon: "/icon.png"
+        favicon: "/favicon.ico"
+        favicon16x16: "/favicon-16x16.png"
+        favicon32x32: "/favicon-32x32.png"
+        apple_touch_icon: "/apple-touch-icon.png"
 #        safari_pinned_tab: "<link / abs url>"
 
     label:
@@ -55,8 +55,8 @@ params:
         iconHeight: 35
 
 #    # profile-mode
-#    profileMode:
-#        enabled: false # needs to be explicitly set
+    profileMode:
+        enabled: false # needs to be explicitly set
 #        title: ExampleSite
 #        subtitle: "This is subtitle"
 #        imageUrl: "<img location>"
@@ -104,10 +104,10 @@ params:
     cover:
         hidden: true # hide everywhere but not in structured data
         hiddenInList: true # hide on list pages and home
-        hiddenInSingle: true # hide on single page
+        hiddenInSingle: false # hide on single page
 
     editPost:
-        URL: "https://github.com/dscrnsit/Blog/tree/content"
+        URL: "https://github.com/dscrnsit/Blog/tree/master/content"
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
 
@@ -131,10 +131,14 @@ menu:
           name: Tags
           url: /tags/
           weight: 20
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 30
         - identifier: website
           name: dscrnsit.github.io
           url: https://dscrnsit.github.io
-          weight: 30
+          weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
 # markup:
