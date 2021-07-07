@@ -1,27 +1,32 @@
 ---
-title: "How to write technical articles for DSC RNSIT Blog"
-summary: "Know how to write articles and contribute to DSC RNSIT Blog"
-description: "Basic information to write articles and contribute to DSC RNSIT Blog"
 date: 2021-07-07
-tags: ["Introduction", "Technical Articles", "Writing"]
-categories: ["Introduction", "Writing"]
-author: "Vijeth P H"
+summary: Know how to write articles and contribute to DSC RNSIT Blog
 ShowToc: false
+author: Vijeth P H
 ShowBreadCrumbs: false
+title: How to write technical articles for DSC RNSIT Blog
+description: Basic information to write articles and contribute to DSC RNSIT Blog
+tags:
+  - Introduction
+  - Technical Articles
+  - Writing
+categories:
+  - Introduction
+  - Writing
 ---
 
 ## Steps to be followed:
 1. Fill this form to register for DSC RNSIT Blog as an author: [Registration Form](https://google.com)
 2. You will receive an email containing invite link to register. It will look like this:
-![Verify Email](uploads/verifyemail.png)
+![Verify Email](/uploads/verifyemail.png#center)
 3. Open the link. You'll be redirected to DSC RNSIT Blog page, but the URL will be different, something like this:
-![Confirm Token](uploads/confirmtoken.png)
+![Confirm Token](/uploads/confirmtoken.png#center)
 4. Add `admin/` after the domain name, and replace the `#confirmation_token=` with `#invite_token=` so that the resulting URL will look like this:
 `https://dscrnsitblog.netlify.app/admin/#invite_token=...."`
 5. Open the modified URL. A page asking for password will be shown. Enter details and complete the registration process.
-![Complete Sign Up](uploads/completesignup.png)
+![Complete Sign Up](/uploads/completesignup.png#center)
 6. Now you can login to [Admin Page](https://dscrnsitblog.netlify.app/admin) and contribute articles by clicking on `New Post` button.
-![New Post](uploads/newpost.png)
+![New Post](/uploads/newpost.png#center)
 7. Remember to save articles once you're finished writing them, so that it can be kept in draft, or be published.
 8. If you run into any issues, feel free to contact us via email, or any social media.
 
