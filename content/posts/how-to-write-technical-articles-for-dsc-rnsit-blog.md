@@ -13,15 +13,15 @@ ShowBreadCrumbs: false
 ## Steps to be followed:
 1. Fill this form to register for DSC RNSIT Blog as an author: [Registration Form](https://google.com)
 2. You will receive an email containing invite link to register. It will look like this:
-![Verify Email](images/verifyemail.png)
+![Verify Email](uploads/verifyemail.png)
 3. Open the link. You'll be redirected to DSC RNSIT Blog page, but the URL will be different, something like this:
-![Confirm Token](images/confirmtoken.png)
+![Confirm Token](uploads/confirmtoken.png)
 4. Add `admin/` after the domain name, and replace the `#confirmation_token=` with `#invite_token=` so that the resulting URL will look like this:
 `https://dscrnsitblog.netlify.app/admin/#invite_token=...."`
 5. Open the modified URL. A page asking for password will be shown. Enter details and complete the registration process.
-![Complete Sign Up](images/completesignup.png)
+![Complete Sign Up](uploads/completesignup.png)
 6. Now you can login to [Admin Page](https://dscrnsitblog.netlify.app/admin) and contribute articles by clicking on `New Post` button.
-![New Post](images/newpost.png)
+![New Post](uploads/newpost.png)
 7. Remember to save articles once you're finished writing them, so that it can be kept in draft, or be published.
 8. If you run into any issues, feel free to contact us via email, or any social media.
 

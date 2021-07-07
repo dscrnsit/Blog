@@ -5,7 +5,7 @@ ShowToc: true
 TocOpen: false
 cover:
   relative: true
-  hidden: true
+  hidden: false
   image: /uploads/whatsapp-image-2021-06-08-at-15.00.04.jpeg
 ---
 Journey of GDSC RNSIT (2020-21) has been outstanding so far. It all started off with our core team which consists of 14 students from core and non core branches who were and are eccentric about contributing towards the betterment of the community. After quite a few bonding sessions, weekly sync-ups, and guidance of our facilitator we managed to bond together and gather all our ideas for conducting a variety of events ranging from web development to hackathons. 
