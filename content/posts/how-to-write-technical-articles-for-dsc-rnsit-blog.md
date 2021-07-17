@@ -27,8 +27,11 @@ categories:
 ![Complete Sign Up](/uploads/completesignup.png#center)
 6. Now you can login to [Admin Page](https://dscrnsitblog.netlify.app/admin) and contribute articles by clicking on `New Post` button.
 ![New Post](/uploads/newpost.png#center)
-7. Remember to save articles once you're finished writing them, so that it can be kept in draft, or be published.
-8. If you run into any issues, feel free to contact us via email, or any social media.
+7. Choose for Rich Text or Markdown to write articles in `Editor Page`, and view real-time changes beside it.   
+![Editor Page](/uploads/newpostedit.png#center)
+8. All options in editor are self-explanatory. `Show TOC` and `Open TOC` stand for Table of Contents for your article. `Meta` refers to article reading time and other details.
+9. Remember to save articles once you're finished writing them, so that it can be kept in draft, or be published. Make sure to add appropriate tags and categories for your article.
+10. If you run into any issues, feel free to contact us via email, or any social media.
 
 ## General Instructions
 * Learn to use Markdown for writing articles. Its really easy to learn, and helps a lot in text formatting.
